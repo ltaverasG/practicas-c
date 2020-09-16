@@ -1,0 +1,26 @@
+using System;
+using System.Dynamic;
+using System.Security.Cryptography.X509Certificates;
+
+namespace PROGRAMACION_3ER_CUATRIMESTRE
+{
+    class Program
+    {/*USANDO LA ESTRUCTURA CÍCLICA WHILE , REALICE UN PROGRAMA QUE PIDA LA EDAD DEL USUARIO 
+        Y MUESTRE LA SECUENCIA DE NÚMEROS DESDE LA EDAD INGRESADA HASTA MIL.*/
+
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("INGRESE SU EDAD");
+            int edad = int.Parse(Console.ReadLine());
+
+            // secuencia de los numeros 
+
+            while (edad <= 1000)
+            {
+                edad++;
+                Console.WriteLine(edad);             
+            }
+        }
+    }
+}

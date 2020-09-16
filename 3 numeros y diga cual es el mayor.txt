@@ -1,0 +1,32 @@
+
+namespace PROGRAMACION_3ER_CUATRIMESTRE
+{
+    class Program
+    {//PROGRAMA QUE RECIBA TRES (3) NÚMEROS Y DETERMINE CUAL ES MAYOR, MOSTRANDO UN MENSAJE PARA CADA CASO.
+
+        
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("INGRESE 3 NUMEROS");
+            Console.WriteLine();
+            int numero = Convert.ToInt32(Console.ReadLine());
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            int numero3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+
+            if (numero > numero2 && numero > numero3)
+            {
+                Console.WriteLine(numero + " ES EL NUMERO MAYOR");
+            }
+            else if (numero2 > numero && numero2 > numero3)
+            {
+                Console.WriteLine(numero2 + " ES EL NUMERO MAYOR");
+            }
+            else if (numero3 > numero && numero3 > numero2)
+            {
+                Console.WriteLine(numero3 + " ES EL NUMERO MAYOR");
+            }
+        }
+    }
+}

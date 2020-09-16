@@ -1,0 +1,21 @@
+using System;
+using System.Dynamic;
+using System.Security.Cryptography.X509Certificates;
+
+namespace PROGRAMACION_3ER_CUATRIMESTRE
+{
+    class Program
+    {/*USANDO LA ESTRUCTURA DO WHILE, 
+        REALICE UN PROGRAMA QUE MUESTRE EN PANTALLA LA SECUENCIA DESCENDENTE DE NÚMEROS DESDE EL 100 AL -25*/
+
+        static void Main(string[] args)
+        {
+            int numero = 100;
+            do
+            {
+                numero--;
+                Console.WriteLine(numero);
+            } while (numero >= -24);
+        }
+    }
+}

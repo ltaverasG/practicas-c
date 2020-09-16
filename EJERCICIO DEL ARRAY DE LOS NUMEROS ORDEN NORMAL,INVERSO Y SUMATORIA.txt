@@ -1,0 +1,47 @@
+using System;
+using System.Dynamic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+
+namespace PROGRAMACION_3ER_CUATRIMESTRE
+{
+    class Program
+    {/*PROGRAMA QUE RECIBA DE PARTE DEL USUARIO 10 NÚMEROS ENTEROS Y LOS ALMACENE EN UN ARREGLO. 
+        LUEGO DE INGRESADOS, EL PROGRAMA DEBE MOSTRARLOS EN EL MISMO ORDEN EN QUE FUERON INSERTADOS Y EN ORDEN INVERSO.
+        FINALMENTE, DEBE CALCULAR LA SUMATORIA DE LOS VALORES DE ESE ARREGLO Y MOSTRARLA EN PANTALLA*/
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("INGRESE 10 NUMEROS ");
+            int[] numeros = new int[10];
+            numeros[0] = int.Parse(Console.ReadLine());
+            numeros[1] = int.Parse(Console.ReadLine());
+            numeros[2] = int.Parse(Console.ReadLine());
+            numeros[3] = int.Parse(Console.ReadLine());
+            numeros[4] = int.Parse(Console.ReadLine());
+            numeros[5] = int.Parse(Console.ReadLine());
+            numeros[6] = int.Parse(Console.ReadLine());
+            numeros[7] = int.Parse(Console.ReadLine());
+            numeros[8] = int.Parse(Console.ReadLine());
+            numeros[9] = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            // imprimirlos en el orden que se ingresaron 
+            foreach (int i in numeros)
+            {
+                Console.WriteLine(i);
+            }
+
+            // en el orden inverso 
+            Console.WriteLine("numeros en orden inverso:");
+            for (int i = 9; i >= 0; i--)
+            {
+                numeros.Reverse(); 
+                Console.WriteLine(numeros[ i]);
+            }
+
+            int sumatoria = numeros[0] + numeros [1] + numeros [2] + numeros [3]+numeros [4] + numeros[5] +numeros[6] + 
+                            numeros[7] + numeros[8] + numeros[9];
+            Console.WriteLine("LA SUMATORIA DE LOS NUMEROS ES: " +  sumatoria);
+        }
+    }

@@ -1,0 +1,29 @@
+using System;
+using System.Dynamic;
+using System.Security.Cryptography.X509Certificates;
+
+namespace PROGRAMACION_3ER_CUATRIMESTRE
+{
+    class Program
+    {/*USANDO LA ESTRUCTURA FOR, REALICE UN PROGRAMA QUE PIDA EL NOMBRE Y LA EDAD DEL USUARIO,
+        Y QUE MUESTRE UN SALUDO CON EL NOMBRE DEL USUARIO, LA CANTIDAD DE VECES DE LA EDAD.
+        (EJEMPLO: SI LA EDAD ES 24, DEBE MOSTRAR EL SALUDO 24 VECES)*/
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("INGRESE SU NOMBRE");
+            string NOMBRE = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.WriteLine("INGRESE SU EDAD");
+            int edad = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            for (int i = 0; i <= edad;i++)
+            {
+                Console.WriteLine("HOLA {0}",NOMBRE);
+            }
+
+        }
+    }
+}

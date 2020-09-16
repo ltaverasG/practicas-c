@@ -1,0 +1,19 @@
+using System;
+using System.Dynamic;
+using System.Security.Cryptography.X509Certificates;
+
+namespace PROGRAMACION_3ER_CUATRIMESTRE
+{
+    class Program
+    {//PROGRAMA QUE PIDA AL USUARIO SU NOMBRE Y LUEGO LO SALUDE CON SU NOMBRE.
+        static void Main(string[] args)
+        {
+            Console.WriteLine("INGRESE SU NOMBRE ");
+            string nombre = Console.ReadLine();
+
+            Console.WriteLine();
+            Console.WriteLine("Hola {0}",nombre);
+           
+        }
+    }
+}
